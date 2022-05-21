@@ -1,0 +1,7 @@
+<h1>Questions starter</h1>
+
+<button (click)="getQuestions()">Get Questions</button>
+
+<div *ngFor="let question of questions | async">
+  {{ question | json }}
+</div>
