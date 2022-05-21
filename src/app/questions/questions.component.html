@@ -1,6 +1,6 @@
 <h1>Questions starter</h1>
 
-<button (click)="getQuestions()">Get Questions</button>
+<button class="bg-blue-600" (click)="getQuestions()">Get Questions</button>
 
 <div *ngFor="let question of questions | async">
   {{ question | json }}
